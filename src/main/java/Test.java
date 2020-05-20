@@ -14,11 +14,11 @@ public class Test {
         char percent = '%';
 
 
-        System.out.println(String.format("This is %-30d int, long", d));
-        System.out.println(String.format("This is %-30f double, float", f));
-        System.out.println(String.format("This is %-30b boolean", b));
-        System.out.println(String.format("This is %-30c char", c));
-        System.out.println(String.format("This is %-30% percent format", percent));
+        System.out.printf("This is %-30d int, long\n", d);
+        System.out.printf("This is %-30f double, float\n", f);
+        System.out.printf("This is %-30b boolean\n", b);
+        System.out.printf("This is %-30c char\n", c);
+        System.out.printf("This is %-30% percent format\n", percent);
 
         /**OUTPUT
 
