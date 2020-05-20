@@ -14,19 +14,21 @@ public class Test {
         char percent = '%';
 
 
-        System.out.printf("This is %-30d int, long\n", d);
-        System.out.printf("This is %-30f double, float\n", f);
+        // -30 после знака процента означает, сколько пробелов добавлять после значение
+        // +30 после знака процента означает, сколько пробелов добавлять перед значением
+        System.out.printf("This is %+30d int, long\n", d);
+        System.out.printf("This is %+30f double, float\n", f);
         System.out.printf("This is %-30b boolean\n", b);
         System.out.printf("This is %-30c char\n", c);
         System.out.printf("This is %-30% percent format\n", percent);
 
         /**OUTPUT
 
-        This is 15                             int, long
-        This is 15,550000                      double, float
-        This is true                           boolean
-        This is C                              char
-        This is %                              percent format
+         This is                            +15 int, long
+         This is                     +15,550000 double, float
+         This is true                           boolean
+         This is C                              char
+         This is %                              percent format
 
          */
     }
